@@ -1,0 +1,78 @@
+.cherry_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(224, 24, 61);
+  background: linear-gradient(0deg, rgb(226, 24, 61) 10%, rgb(0, 0, 0) 90%);
+
+  padding: 150px 0 50px 0;
+}
+
+.cherry_selector {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 500px;
+  }
+
+  p {
+    width: 80%;
+    text-align: center;
+    margin: 0 0 90px 0;
+  }
+
+  button {
+    border: none;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+  }
+}
+
+
+.cherry_members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 150px 0;
+
+  img {
+    width: 150px;
+  }
+}
+
+.cherry_member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin: 20px 0;
+  }
+}
+
+.cherry_logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin:  0 0 50px 0;
+}
+
+
+.cherry_logo {
+  padding: 8px 13px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+
+
+  svg {
+    width: 15px;
+    fill: #d9173b;
+  }
+}

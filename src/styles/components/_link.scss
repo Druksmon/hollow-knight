@@ -1,0 +1,39 @@
+.link_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    margin: 140px 0 100px 0;
+  }
+  font-family: "TrajanPro", serif;
+}
+
+.link_selector {
+  width: 90%;
+  display: grid;
+  padding: 0 0 40px 0;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+
+  img {
+    width: 200px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.link_video {
+  margin: 90px 0 0 0;
+
+  iframe {
+    width: 1500px;
+    height: 800px;
+    border: none;
+  }
+
+}

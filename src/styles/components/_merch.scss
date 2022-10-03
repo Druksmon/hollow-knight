@@ -1,0 +1,110 @@
+.merch_gradient {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 35%, rgb(17, 40, 27) 100%);
+  z-index: -1;
+}
+
+.merch_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "TrajanPro", serif;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0 0 500px 0;
+}
+
+.merch_selector {
+  width: 90%;
+  height: 100%;
+  padding: 200px 0;
+
+}
+
+.merch_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 60px;
+    margin: 50px 0 0 0;
+    opacity: 0.9;
+  }
+}
+
+.merch_boxes {
+  margin: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+
+}
+
+.merch_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  p {
+    font-size: 12px;
+    margin: 20px 0 40px 0;
+  }
+
+  button {
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.merch_album {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 150px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-image: url("../../assets/HK_ALBUM_02_COVER.png");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+
+  button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.merch_album_gradient {
+  width: 100%;
+  height: 400px;
+  background: rgb(198, 188, 83);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+  position: absolute;
+  top: 0;
+  z-index: -2;
+
+}
+
+.merch_text {
+  p {
+    margin: 30px 0;
+  }
+}
