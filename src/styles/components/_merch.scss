@@ -45,6 +45,10 @@
   grid-template-columns: repeat(3, 30%);
   justify-content: space-between;
 
+  img{
+    width: 100%;
+  }
+
 }
 
 .merch_box {
@@ -52,10 +56,11 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  position: relative;
 
   p {
     font-size: 12px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 90px 0;
   }
 
   button {
@@ -64,6 +69,8 @@
     height: 50px;
     border: none;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -88,6 +95,7 @@
     height: 50px;
     border: none;
     cursor: pointer;
+
   }
 }
 
@@ -106,5 +114,46 @@
 .merch_text {
   p {
     margin: 30px 0;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .merch_box {
+    button {
+      width:100%;
+
+    }
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .merch_boxes {
+    margin: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .merch_album{
+    transform: translate(-50%, 45%);
   }
 }

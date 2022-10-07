@@ -1,15 +1,16 @@
 .nav_container {
   width: 100%;
-  position: absolute;
-  z-index: 5;
+  position: fixed;
+  z-index: 50;
   display: flex;
   justify-content: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 5%, rgba(19, 19, 19, 0.93) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(19, 19, 19, 0.97) 100%);
 }
 
-.nav_selector {
-padding: 10px 0;
+.nav-menu  {
+  padding: 10px 0;
+  min-height: 80px;
 
   ul {
     display: flex;
@@ -24,11 +25,106 @@ padding: 10px 0;
     padding: 0 20px;
   }
 
+
+}
+
+.burger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  background-color: rgba(42, 47, 56, 0);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.nav_logo {
+  margin: 0 40px;
+
   img {
     width: 90px;
   }
 }
 
-.nav_logo{
-  margin: 0 40px;
+.nav_logo-2 {
+
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.nav_logo-2 {
+  width: 50px;
+}
+
+//REPONSIVE
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    z-index: 10;
+  }
+  .nav_logo-2 {
+    display: block;
+    z-index: 10;
+
+  }
+
+
+  .nav-menu  {
+
+    ul li:nth-child(3) {
+      display: none;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: calc(100vh);
+      border-top: 1px solid black;
+      padding: 190px 0 0 0;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(0deg, rgb(182, 18, 18) 25%, rgb(0, 0, 0) 100%);
+
+
+
+      li {
+      padding: 30px 0;
+      }
+
+    }
+
+  }
+
+  .nav-menu.expanded ul{
+    display: flex;
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
 }

@@ -29,10 +29,12 @@
 }
 
 .info-box-1,.info-box-2, .info-box-3{
-  width: 50%;
+  width: 60%;
+  min-width: 280px;
   text-align: center;
   z-index: 5;
   color: rgba(255, 255, 255, 0.83);
+  margin: 190px auto 0 auto;
   h1 {
     margin: 0 0 40px 0;
     font-size: 40px;
@@ -41,25 +43,115 @@
   }
 }
 
-.info-box-1{
-  width: 60%;
-  margin: 190px 0 0 60px;
-}
-
-.info-box-2{
-  margin: 190px 0 0 140px;
-}
-
-.info-box-3{
-  margin: 190px 0 0 30px;
-}
-
 
 .info_images {
-
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 33%);
   justify-content: space-between;
   grid-row-gap: 200px;
 
+}
+
+
+//RESPONSIVE
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .info_images {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+    grid-row-gap: 100px;
+
+  }
+
+  .info-box-2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 90px auto;
+
+  }
+  .info-box-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 90px 0;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .info_title{
+    margin: 600px auto 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+      opacity: 0.8;
+      text-align: center;
+    }
+    img{
+      width: 60px;
+      margin: 50px 0 0 0;
+      opacity: 0.9;
+
+    }
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .info-box-1,.info-box-2, .info-box-3{
+    width: 70%;
+
+    margin: auto;
+    h1 {
+      margin: 0 0 40px 0;
+      font-size: 40px;
+      opacity: 0.9;
+
+    }
+  }
+  .info_images {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    grid-row-gap: 100px;
+
+  }
+
+  .info-box-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .info-box-2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin: 90px auto;
+
+  }
+  .info-box-3{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    padding: 90px 0;
+
+  }
 }

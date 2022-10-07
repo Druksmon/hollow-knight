@@ -5,6 +5,8 @@
   align-items: center;
   h1{
     margin: 140px 0 100px 0;
+    text-align: center;
+    width: 80%;
   }
   font-family: "TrajanPro", serif;
 }
@@ -29,11 +31,114 @@
 
 .link_video {
   margin: 90px 0 0 0;
+  width: 90%;
+  height: 100%;
+
 
   iframe {
-    width: 1500px;
+    width: 100%;
     height: 800px;
     border: none;
   }
 
+}
+
+
+
+//RESPONSIVE
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1400px) {
+
+  //NAVBAR
+  //HEADER
+
+  //LINK
+
+  .link_selector {
+    padding:0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+
+    img {
+      width: 200px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  //DLC
+  //REVIEWS
+  //INFORMATION
+  //MERCH
+  //UNITY
+  //CHERRY
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+  //NAVBAR
+  //HEADER
+  //LINK
+  //DLC
+  //REVIEWS
+  //INFORMATION
+  //MERCH
+  //UNITY
+  //CHERRY
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  //NAVBAR
+  //HEADER
+  //LINK
+  .link_selector {
+    img {
+      width: 150px;
+    }
+  }
+  //DLC
+  //REVIEWS
+  //INFORMATION
+  //MERCH
+  //UNITY
+  //CHERRY
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .link_selector {
+    padding:0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+
+    img {
+      width: 200px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .link_selector {
+    img {
+      width: 140px;
+    }
+  }
 }

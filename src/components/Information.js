@@ -11,7 +11,6 @@ import screen7 from '../assets/screens/mines.jpg'
 import screen8 from '../assets/screens/Moss_charger.jpg'
 
 
-
 import separator from '../assets/separator.png'
 
 
@@ -21,8 +20,6 @@ const Information = () => {
     return (
 
         <div className="info_container">
-
-
             <motion.div initial={{opacity: 0, y: 50}}
                         whileInView={{opacity: 1, y: 0}}
                         viewport={{once: true}}
@@ -30,10 +27,9 @@ const Information = () => {
                 <h1>Descend into the Dark</h1>
                 <img src={separator} alt=""/>
             </motion.div>
-
             <div className="info_images">
                 <Image classImg={'image_box-1'} img={screen1}/>
-                <div className=" info-box-1">
+                <div className="info-box-1">
                     <div className="info_text">
                         <h1>Brave the Depths of a Forgotten Kingdom</h1>
                         <h3>Beneath the fading town of Dirtmouth sleeps a vast, ancient kingdom.

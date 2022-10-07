@@ -13,36 +13,39 @@
 }
 
 .image_box-1 {
-  left: 80px;
+  margin: auto;
+  width: 80%;
 }
 
 .image_box-2 {
-  width: 300px;
+  margin: auto;
+  width: 60%;
   height: 400px;
-
   top: 400px;
 }
 
 .image_box-3 {
-
-
+  margin: auto;
+  width: 90%;
 }
 
 .image_box-4 {
   top: 150px;
-  width: 100px;
   height: 200px;
+  margin: auto;
+  width: 30%;
 }
 
 .image_box-5 {
-  left: 80px;
+  width: 80%;
+  margin: auto;
 }
 
 .image_box-6 {
   top: -90px;
-  width: 400px;
   height: 600px;
-  left: -80px;
+  width: 80%;
+  margin: auto;
 }
 
 .image_box-7 {
@@ -52,4 +55,24 @@
 .image_box-8 {
 
 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .image_box-2{
+    display: none;
+  }
+  .image_box-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+  }
+  .image_box-4 {
+    display: none;
+  }
+  .image_box-6 {
+
+  }
 }
