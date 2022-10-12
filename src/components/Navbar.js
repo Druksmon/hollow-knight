@@ -20,7 +20,10 @@ const Navbar = () => {
 
         <nav className="nav_container">
             <div className="nav_selector">
-                <button className='burger' onClick={() => {
+                <motion.button initial={{opacity: 0 }}
+                               whileInView={{opacity: 1}}
+                               viewport={{once: true}}
+                               transition={{duration: 1.2}} className='burger' onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
                 }}>
                     <svg
@@ -35,10 +38,13 @@ const Navbar = () => {
                             clipRule="evenodd"
                         />
                     </svg>
-                </button>
-                <a href="#header">
+                </motion.button>
+                <motion.a  initial={{opacity: 0, y: 50}}
+                           whileInView={{opacity: 1, y: 0}}
+                           viewport={{once: true}}
+                           transition={{duration: 1.2}} href="#header">
                     <img className='nav_logo-2' src={logo2} alt=""/>
-                </a>
+                </motion.a>
 
                 <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
                     <ul>

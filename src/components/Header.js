@@ -4,7 +4,6 @@ import {motion} from "framer-motion";
 
 const Header = () => {
     return (
-
         <div id='header' className="header_container">
             <div className="header_logo-container">
                 <motion.img initial={{opacity: 0, y: 50}}
@@ -14,7 +13,6 @@ const Header = () => {
             </div>
             <div className="header_gradient"/>
         </div>
-
     )
 }
 

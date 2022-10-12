@@ -16,7 +16,8 @@ const Reviews = () => {
         <div className="reviews_container">
             <div className="reviews_background">
                 <div className="reviews_gradient"/>
-                <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showIndicators={true} showThumbs={false}
+                <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showIndicators={true}
+                          showThumbs={false}
                           interval={2000} stopOnHover={true} className="reviews_selector">
                     <motion.div initial={{opacity: 0}}
                                 whileInView={{opacity: 1}}

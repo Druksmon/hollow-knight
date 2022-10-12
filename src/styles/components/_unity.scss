@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   p{
-    margin: 50px 0 60px 0;
+    margin: 0 0 60px 0;
     font-size: 11px;
   }
   button{
@@ -15,7 +15,6 @@
     cursor: pointer;
   }
 }
-
 .unity_logo{
   display: flex;
   align-items: center;
@@ -24,5 +23,38 @@
   }
   h3{
     margin: 0 10px 0 0;
+  }
+}
+
+
+
+//RESPONSIVE
+//
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .unity_logo{
+    img{
+      width: 160px;
+      margin: 30px 0;
+    }
+  }
+  .unity_container{
+    p{
+     width: 90%;
+      text-align: center;
+    }
   }
 }

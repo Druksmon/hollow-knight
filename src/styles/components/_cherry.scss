@@ -6,8 +6,14 @@
   align-items: center;
   background: rgb(224, 24, 61);
   background: linear-gradient(0deg, rgb(226, 24, 61) 10%, rgb(0, 0, 0) 90%);
-
   padding: 150px 0 50px 0;
+
+  p {
+    width: 80%;
+    text-align: center;
+    margin: 0 0 90px 0;
+  }
+
 }
 
 .cherry_selector {
@@ -21,11 +27,6 @@
     width: 500px;
   }
 
-  p {
-    width: 80%;
-    text-align: center;
-    margin: 0 0 90px 0;
-  }
 
   button {
     border: none;
@@ -60,7 +61,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  margin:  0 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 
@@ -76,9 +77,6 @@
     fill: #d9173b;
   }
 }
-
-
-
 
 
 //RESPONSIVE
@@ -109,4 +107,30 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
 
+  .cherry_selector {
+
+    img {
+      width: 300px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+
+  .cherry_container {
+
+    p {
+      font-size: 14px;
+      margin: 30px 0;
+    }
+
+  }
+
+  .cherry_selector {
+
+    img {
+      width: 200px;
+    }
+  }
 }
