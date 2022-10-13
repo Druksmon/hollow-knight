@@ -11,16 +11,18 @@
   font-family: "TrajanPro", serif;
 
 }
-.info_title{
+
+.info_title {
   margin: 400px auto 200px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1{
+  h1 {
     opacity: 0.8;
   }
-  img{
+
+  img {
     width: 60px;
     margin: 50px 0 0 0;
     opacity: 0.9;
@@ -28,13 +30,14 @@
   }
 }
 
-.info-box-1,.info-box-2, .info-box-3{
+.info-box-1, .info-box-2, .info-box-3 {
   width: 60%;
   min-width: 280px;
   text-align: center;
   z-index: 5;
   color: rgba(255, 255, 255, 0.83);
   margin: 190px auto 0 auto;
+
   h1 {
     margin: 0 0 40px 0;
     font-size: 40px;
@@ -70,7 +73,7 @@
 
   }
 
-  .info-box-2{
+  .info-box-2 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -78,7 +81,7 @@
     margin: 90px auto;
 
   }
-  .info-box-3{
+  .info-box-3 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -91,17 +94,18 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
-  .info_title{
+  .info_title {
     margin: 600px auto 200px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h1{
+    h1 {
       opacity: 0.8;
       text-align: center;
     }
-    img{
+
+    img {
       width: 60px;
       margin: 50px 0 0 0;
       opacity: 0.9;
@@ -113,10 +117,11 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .info-box-1,.info-box-2, .info-box-3{
+  .info-box-1, .info-box-2, .info-box-3 {
     width: 70%;
 
     margin: auto;
+
     h1 {
       margin: 0 0 40px 0;
       font-size: 40px;
@@ -132,13 +137,13 @@
 
   }
 
-  .info-box-1{
+  .info-box-1 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
   }
-  .info-box-2{
+  .info-box-2 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
@@ -146,7 +151,7 @@
     margin: 90px auto;
 
   }
-  .info-box-3{
+  .info-box-3 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 6;
@@ -155,3 +160,25 @@
 
   }
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+
+
+  .info-box-1, .info-box-2, .info-box-3 {
+
+    min-width: 230px;
+
+
+    h1 {
+      font-size: 30px;
+
+    }
+
+    h3 {
+      font-size: 21px;
+    }
+  }
+}
+

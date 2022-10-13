@@ -49,11 +49,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1400px) {
 
-  //NAVBAR
-  //HEADER
-
-  //LINK
-
   .link_selector {
     padding:0;
     grid-template-columns: repeat(3, 1fr);
@@ -68,28 +63,10 @@
       justify-content: center;
     }
   }
-  //DLC
-  //REVIEWS
-  //INFORMATION
-  //MERCH
-  //UNITY
-  //CHERRY
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-
-  //NAVBAR
-  //HEADER
-  //LINK
-  //DLC
-  //REVIEWS
-  //INFORMATION
-  //MERCH
-  //UNITY
-  //CHERRY
-
 
 }
 
@@ -99,21 +76,22 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  //NAVBAR
-  //HEADER
-  //LINK
+
   .link_selector {
     img {
       width: 150px;
     }
   }
-  //DLC
-  //REVIEWS
-  //INFORMATION
-  //MERCH
-  //UNITY
-  //CHERRY
+  .link_video {
 
+
+    iframe {
+
+      height: 500px;
+
+    }
+
+  }
 
 }
 
@@ -133,12 +111,22 @@
       justify-content: center;
     }
   }
+  .link_video {
+
+
+    iframe {
+
+      height: 200px;
+
+    }
+
+  }
 }
 
 @media only screen and (max-width: 460px) {
   .link_selector {
     img {
-      width: 140px;
+      width: 100%;
     }
   }
 }

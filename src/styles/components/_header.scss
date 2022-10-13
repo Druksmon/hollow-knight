@@ -1,7 +1,7 @@
 .header_container {
   width: 100%;
   height: 120vh;
-  background-image: url('../../assets/Promo_6.png');
+  background-image: url('../../assets/Promo_6.webp');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -85,6 +85,18 @@
 
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .header_logo-container {
+
+    img {
+      min-width: 220px;
+      width: 100%;
+    }
+
+  }
+}
+
 
 
 

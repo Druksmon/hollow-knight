@@ -26,7 +26,8 @@ const Merch = () => {
                                     transition={{duration: 1.2, delay: 0.2}} className="merch_box">
                             <img src={fangamer} alt=""/>
                             <p>Plush Grubs! Plush Knights! Rad Tees and so much more!</p>
-                            <button>BROWSE FANGAMER</button>
+                            <a target='_blank' href='https://www.fangamer.com/collections/hollow-knight'>BROWSE
+                                FANGAMER</a>
                         </motion.div>
                         <motion.div initial={{opacity: 0, y: 50}}
                                     whileInView={{opacity: 1, y: 0}}
@@ -34,7 +35,7 @@ const Merch = () => {
                                     transition={{duration: 1.2, delay: 0.4}} className="merch_box">
                             <img src={yetee} alt=""/>
                             <p>Classy Tees! Stylish Pins! The coolest, friendliest yetee we know!</p>
-                            <button>BROWSE THEYETEE</button>
+                            <a target='_blank' href='https://theyetee.com/collections/hollow-knight'>BROWSE THEYETEE</a>
                         </motion.div>
                         <motion.div initial={{opacity: 0, y: 50}}
                                     whileInView={{opacity: 1, y: 0}}
@@ -42,7 +43,8 @@ const Merch = () => {
                                     transition={{duration: 1.2, delay: 0.6}} className="merch_box">
                             <img src={ghost} alt=""/>
                             <p>Limited Vinyl Releases!</p>
-                            <button>BROWSE GHOST-RAMP</button>
+                            <a target='_blank' href='https://store.ghostramp.com/password'>
+                                BROWSE GHOST-RAMP</a>
                         </motion.div>
 
                     </div>
@@ -62,11 +64,14 @@ const Merch = () => {
                                 throughout the game, <br/> echoing the sadness of a majestic civilisation brought to
                                 ruin.
                             </motion.p>
-                            <motion.button initial={{opacity: 0, y: 50}}
-                                           whileInView={{opacity: 1, y: 0}}
-                                           viewport={{once: true}}
-                                           transition={{duration: 1.2, delay: 0.2}}>Purchase the Official Soundtrack
-                            </motion.button>
+                            <motion.a initial={{opacity: 0, y: 50}}
+                                      whileInView={{opacity: 1, y: 0}}
+                                      viewport={{once: true}}
+                                      transition={{duration: 1.2, delay: 0.2}}
+                                      href='https://christopherlarkin.bandcamp.com/album/hollow-knight-original-soundtrack'
+                                      target='_blank'>
+                                Purchase the Official Soundtrack
+                            </motion.a>
                         </div>
 
                     </div>
